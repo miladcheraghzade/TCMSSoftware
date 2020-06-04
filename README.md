@@ -9,7 +9,8 @@ Table of Contents:
   System Identification (Peak Picking Algorithm)
   Tensile Force Estimation
   
-![Slide1](https://user-images.githubusercontent.com/62703937/83702149-ad6b0f80-a5c0-11ea-8ade-7cc9c463a308.PNG)
+
+![Slide1](https://user-images.githubusercontent.com/62703937/83702349-4f8af780-a5c1-11ea-928f-a4c87d6401bd.PNG)
 
   
   
