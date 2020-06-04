@@ -1,0 +1,29 @@
+ [FileName, Dir] = uigetfile({'.mat','Matlab Files';'*.txt;*.dat','Text Files';'*.xls;*.xlsx','Excel Files';...
+                        '*.*','All Files'},'File Selection','Uititled.txt');
+                    File = fullfile ( Dir , FileName );
+                    [~,~,Extension]=fileparts(File);
+                    
+                    if isempty(FileName)
+                        return
+                    end
+                    
+                    switch Extension
+                        case '.mat'
+                            
+                            load(File.mat);
+                            
+                        case {'.txt','.dat'}
+                            
+                            matrix =  load(File,'-ascii');
+                            
+                        case {'.xlsx','.xls'}
+                            
+                            matrix =  xlsread(File);
+                    end
+                    
+                    
+                    MatrixChennel = {};
+                    for j = 1:size(matrix,2)
+                        MatrixChennel{j} = ['Sensor''s Data ' num2str(j)];
+                        uitreenode(app.ChannelDataNode,'Text', MatrixChennel{j});
+                    end
