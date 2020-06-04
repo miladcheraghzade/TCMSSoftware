@@ -12,7 +12,8 @@ Table of Contents:
   System Identification (Peak Picking Algorithm)
   Tensile Force Estimation
   
- ![](G:/TCMS/PicFor%20GitHub/fig1.png)
+![fig1](https://user-images.githubusercontent.com/62703937/83701987-36ce1200-a5c0-11ea-87f1-5cd212ffc5d1.png)
+
   
   
  MIT License
