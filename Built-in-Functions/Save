@@ -1,0 +1,21 @@
+ [FileName, Dir] = uiputfile({'*.mat','Matlab File'},'Save Results','Unkown.mat');
+            File = fullfile(Dir,FileName);
+                    
+            global matrix       
+            switch value
+                case 'Save'
+                    if ~isempty(matrix)
+                    save(File,'matrix','-mat','-append');
+                    end
+                    if isempty(matrix)
+                    msg("pls import the channel data first",'User Guide','error')
+                    end
+                case 'Save As'
+                    if ~isempty(matrix)
+                    save(File,'matrix','-mat');
+                    end
+                    if isempty(matrix)
+                    msg("pls import the channel data first",'User Guide','error')
+                    end
+                    
+            end
