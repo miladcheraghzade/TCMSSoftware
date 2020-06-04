@@ -1,7 +1,9 @@
 # Project Name : TCMSSoftware
 Tendons Condition Monitoring Software
 
-
+Description:
+   this is an under develope software for condition monitoring of external PT tendons. the sections for tensile force estimation is alredy finished. the damage detection part is under develop and it will be finished within time schedule.
+   
 Table of Contents:
   Pre-Processing
   Data cleaning
